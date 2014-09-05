@@ -17,7 +17,6 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
-gem 'omniauth-linkedin'
 gem 'omniauth-vkontakte'
 
 gem "twitter-bootstrap-rails"

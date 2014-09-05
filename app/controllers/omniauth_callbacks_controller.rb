@@ -15,7 +15,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     }
   end
 
-  [:twitter, :facebook, :linked_in, :vkontakte].each do |provider|
+  [:twitter, :facebook, :vkontakte].each do |provider|
     provides_callback_for provider
   end
 
@@ -25,5 +25,15 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     else
       finish_signup_path(resource)
     end
+  end
+
+  private
+ 
+  def sign_up_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+ 
+  def account_update_params
+    params.require(:user).permit(:name, :email)
   end
 end

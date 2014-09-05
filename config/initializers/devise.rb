@@ -236,7 +236,6 @@ Devise.setup do |config|
   config.omniauth :facebook, '741662092536277', '98b516d6dfecfef1f61dbbe6c2283f26'
   config.omniauth :vkontakte, '4535954', '0yUuLipjn1Ugwz2jDEI6'
   config.omniauth :twitter, "vEMqIsIDXkBj4z1PhCmqBNYNW", "QtDbUiWiapXtvzNkQ5ECsGLyVZPdTCcLLB6KF420SyOnpdtLIg"
-  config.omniauth :linked_in, "KEY", "SECRET"
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
